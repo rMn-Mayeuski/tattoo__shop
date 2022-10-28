@@ -1,0 +1,17 @@
+.wrapper {
+    max-width: 1246px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header{
+    background: #050402;
+    &Top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        &Logo{
+            height: 63px;
+            width: 186px;
+        }
+    }
+}

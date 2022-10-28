@@ -1,0 +1,16 @@
+@import "../../styles/mixins";
+
+.linkWithBckg{
+    @include MainLink;
+    background: #524336;
+    color: #FAF6F2;
+}
+.linkWithoutBckg{
+    @include MainLink;
+    background: #EEEEEE;
+    color: #BB8C5F;
+}
+
+
+
+

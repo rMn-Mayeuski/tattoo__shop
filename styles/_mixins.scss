@@ -1,0 +1,42 @@
+@mixin MainBtn {
+    border: 2px solid #BB8C5F;
+    width: 275px;
+    height: 70px;
+    cursor: pointer;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+@mixin MainLink {
+    border: 2px solid #BB8C5F;
+    width: 275px;
+    height: 70px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin TitleText {
+    font-family: 'Forum';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 100%;
+    color: #3E424B;
+}
+@mixin DescriptionText {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 140%;
+    color: #3E424B;
+}

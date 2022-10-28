@@ -1,4 +1,4 @@
-import Meta from "../utils/Meta";
+import Meta from "../../utils/Meta";
 
 const Catalog = () => {
     return (
@@ -7,9 +7,9 @@ const Catalog = () => {
                 title="Каталог" 
                 description="Тату машинки"
             />
-            <main>
+            <>
                 <h1>Catalog Page</h1>
-            </main>
+            </>
         </>
     );
 };

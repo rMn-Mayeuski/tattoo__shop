@@ -1,2 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Forum&family=Jost:wght@300;400;500;600;700&family=Montserrat:wght@400;500&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    scroll-behavior: smooth; 
+}
+
+html,
+body {
+    height: 100%;
+    background: #EEEEEE;
+}
+textarea {
+    resize: none;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+}

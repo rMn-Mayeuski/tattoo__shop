@@ -1,0 +1,12 @@
+@import "../../styles/mixins";
+
+.buttonWithBckg{
+    background: #524336;
+    color: #FAF6F2;
+    @include MainBtn
+}
+.buttonWithoutBckg{
+    background: #EEEEEE;
+    color: #BB8C5F;
+    @include MainBtn
+}
