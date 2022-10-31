@@ -1,0 +1,9 @@
+.cart{
+    cursor: pointer;
+    border: none;
+    background: inherit;
+    & img{
+        height: 17px;
+        width: 20px;
+    }
+}

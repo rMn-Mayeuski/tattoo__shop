@@ -10,14 +10,6 @@ export default function Home() {
         <>
         <Header/>
           <main>
-            
-              <nav>
-                <ul>
-                  <li><Link href="/catalog">Catalog</Link></li>
-                  <li><Link href="/cart">Cart</Link></li>
-                </ul>
-              </nav>
-              <h1>Main Page</h1>
               <Banner/>
               <Catalog/>
           </main>

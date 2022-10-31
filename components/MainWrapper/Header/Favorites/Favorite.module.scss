@@ -1,0 +1,9 @@
+.favorite{
+    cursor: pointer;
+    border: none;
+    background: inherit;
+    & img{
+        height: 20px;
+        width: 20px;
+    }
+}

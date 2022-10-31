@@ -1,3 +1,5 @@
+@import "../../../styles/mixins";
+
 .wrapper {
     max-width: 1246px;
     padding: 0 15px;
@@ -6,12 +8,118 @@
 .header{
     background: #050402;
     &Top{
+        position: relative;
+        padding: 39px 0 14px; 
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #524336;
         &Logo{
-            height: 63px;
-            width: 186px;
+            position: absolute;
+            top: calc(50% - 31.5px);
+            left: calc(50% - 93px);
+            & img{
+                height: 63px;
+                width: 186px;
+            }
+        }
+        &Left{
+            display: flex;
+            align-items: flex-start;
+            gap: 56px;
+            &Content{
+                display: flex;
+                flex-direction: column;
+                &Number{
+                    @include DescriptionText;
+                    font-size: 15px;
+                    line-height: 150%;
+                    color: #FAF6F2;
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    & img{
+                        height: 28px;
+                        width: 28px;
+                    }
+                }
+                &Socials{
+                    display: flex;
+                    gap: 10px;
+                    & a{
+                        @include DescriptionText;
+                        font-size: 12px;
+                        line-height: 150%;
+                        color: #D0D0D0;
+                        transition: 0.4s;
+                        &:hover{
+                            color: #BB8C5F;
+                            transition: 0.4s;
+                        }
+                    }
+                }
+                &Email{
+                    @include DescriptionText;
+                    font-size: 15px;
+                    line-height: 150%;
+                    color: #FAF6F2;
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                }
+            }
+        }
+        &Right{
+            display: flex;
+            align-items: center;
+            gap: 54px;
+        }
+    }
+    &Bottom{
+        padding: 12px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+        &Left{
+            position: relative;
+            &Burger{
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                position: relative;
+                & h2{
+                    @include DescriptionText;
+                    font-size: 25px;
+                    color: #FAF6F2;
+                }
+                & img{
+                    height: 14px;
+                    width: 24px;
+                }
+            }
+            &Active{
+                position: absolute;
+                top: 50px;
+                opacity: 0;
+                background: #F5F5F5;
+                box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.1);
+            }
+        }
+        &Right{
+            display: flex;
+            gap: 60px;
+            & a{
+                @include DescriptionText;
+                font-size: 17px;
+                color: #FAF6F2;
+                &:hover{
+                    color: #BB8C5F;
+                    transition: 0.4s;
+                }
+            }
         }
     }
 }

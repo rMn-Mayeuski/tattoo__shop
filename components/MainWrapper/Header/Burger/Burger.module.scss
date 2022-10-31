@@ -1,0 +1,33 @@
+@import "../../../../styles/mixins";
+
+.burger{
+    position: absolute;
+    transform: translateX(-500%);
+    top: 116px;
+    &Active{
+        transform: translateX(0);
+        position: absolute;
+        background: white;
+        top: 51px;
+        z-index: 100;
+    }
+    &Top{
+        padding: 30px 50px;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        border-bottom: 1px solid #D0D0D0;
+        & button{
+            cursor: pointer;
+            border: none;
+            background: inherit;
+            @include DescriptionText;
+            font-weight: 600;
+            transition: 0.4s;
+            &:hover{
+                color: #BB8C5F;
+                transition: 0.4s;
+            }
+        }
+    }
+}
