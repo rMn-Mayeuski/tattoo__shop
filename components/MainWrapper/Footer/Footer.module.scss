@@ -1,8 +1,92 @@
+@import "../../../styles/mixins";
+
 .wrapper {
     max-width: 1246px;
     padding: 0 15px;
     margin: 0 auto;
 }
 .footer{
-    
+    background: #050402;
+    &Content{
+        display: flex;
+        &Left{
+            display: flex;
+            gap: 75px;
+            border-right: 1px solid #524336;
+            padding: 140px 100px 120px 0;
+            &Menu{
+                display: flex;
+                flex-direction: column;
+                gap: 35px;
+                & a{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 133.5%;
+                    color: #E9ECF1;
+                }
+            }
+            &Logo{
+                display: flex;
+                flex-direction: column;
+                gap: 52px;
+                & img{
+                    height: 67px;
+                    width: 186px;
+                }
+                & a{
+                    font-family: 'Montserrat';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 150%;
+                    color: #FAF6F2;
+                }
+            }
+        }
+        &Right{
+            padding: 130px 0 130px 100px;
+            &Socials{
+                display: flex;
+                gap: 20px;
+                &Logo{
+                    height: 40px;
+                    width: 40px;
+                }
+                &Number{
+                    @include DescriptionText;
+                    font-size: 20px;
+                    line-height: 150%;
+                    color: #FAF6F2;
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+                    & img{
+                        height: 19px;
+                        width: 19px;
+                    }
+                }
+            }
+            &WorkH{
+                @include DescriptionText;
+                line-height: 150%;
+                color: #636B78;
+                margin: 12px 0 32px
+            }
+            &Email{
+                @include DescriptionText;
+                font-size: 20px;
+                line-height: 150%;
+                color: #FAF6F2;
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                & img{
+                    height: 28x;
+                    width: 28px;
+                }
+            }
+        }
+    }
 }
